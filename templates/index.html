@@ -43,6 +43,10 @@
         <h5>pressure : {{data.pressure}} </h5>
         <h5>humidity : {{data.humidity}}</h5>
     </div>
+    {% else %}
+    <div align="center">
+        <h5 style="color: red">{{error}}</h5>
+    </div>
     {% endif %}
   </div>
 </body>
